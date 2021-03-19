@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="1090.0" style="-fx-background-color: rgb(80, 80, 80);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="left_column" layoutX="-1.0" layoutY="-3.0" prefHeight="614.0" prefWidth="317.0" style="-fx-background-color: #f2f3f4;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="-3.0">
+         <children>
+            <Button fx:id="add" layoutX="25.0" layoutY="189.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="38.0" prefWidth="274.0" style="-fx-background-color: rgb(80, 80, 80);" text="Редактировать" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="list" layoutX="17.0" layoutY="154.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="38.0" prefWidth="287.0" style="-fx-background-color: rgb(80, 80, 80);" text="Просмотреть" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Pane layoutX="6.0" layoutY="14.0" prefHeight="64.0" prefWidth="306.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="5.0" layoutY="10.0" prefHeight="43.0" prefWidth="300.0" text="Домашняя  аптечка" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="virus" layoutX="26.0" layoutY="484.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="38.0" prefWidth="267.0" style="-fx-background-color: rgb(80, 80, 80);" text="Простуда" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="body" layoutX="24.0" layoutY="453.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="38.0" prefWidth="270.0" style="-fx-background-color: rgb(80, 80, 80);" text="Телесные травмы" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="teeth" layoutX="22.0" layoutY="419.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="38.0" prefWidth="274.0" style="-fx-background-color: rgb(80, 80, 80);" text="Зубные боли" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="stomach" layoutX="18.0" layoutY="387.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="38.0" prefWidth="279.0" style="-fx-background-color: rgb(80, 80, 80);" text="Боли в животе" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="exit" layoutX="87.0" layoutY="546.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: rgb(80, 80, 80);" text="Выход" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font></Button>
+            <Pane layoutX="11.0" layoutY="98.0" prefHeight="58.0" prefWidth="300.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 13px;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="67.0" layoutY="8.0" text="Лекарства" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="Head" layoutX="15.0" layoutY="352.0" mnemonicParsing="false" onAction="#open_pane" prefHeight="38.0" prefWidth="287.0" style="-fx-background-color: rgb(80, 80, 80);" text="Головные боли" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Pane layoutX="9.0" layoutY="297.0" prefHeight="58.0" prefWidth="300.0" style="-fx-background-color: rgb(80, 80, 80); -fx-background-radius: 13px;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="67.0" layoutY="7.0" text="Виды боли" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <AnchorPane fx:id="right_column" layoutX="317.0" layoutY="-1.0" prefHeight="607.0" prefWidth="778.0">
+         <children>
+            <Pane fx:id="main_pane" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <Label fx:id="main_label" layoutX="20.0" layoutY="153.0" prefHeight="47.0" prefWidth="748.0" text="Добро пожаловать в домашнюю аптечку!" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label fx:id="main_label1" layoutX="58.0" layoutY="289.0" prefHeight="47.0" prefWidth="628.0" text="Здесь Вы можете просматривать:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label fx:id="main_label11" layoutX="36.0" layoutY="355.0" prefHeight="47.0" prefWidth="686.0" text="1) Какие нужно принимать лекарства" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label fx:id="main_label111" layoutX="33.0" layoutY="402.0" prefHeight="47.0" prefWidth="680.0" text="2) Наличие лекарств в вашей аптечке" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label fx:id="main_label1111" layoutX="30.0" layoutY="449.0" prefHeight="47.0" prefWidth="556.0" text="3) Редактировать ваш список" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="adding_pane" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <Label layoutX="187.0" layoutY="6.0" prefHeight="47.0" prefWidth="420.0" text="Добавление лекарства" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="63.0" prefHeight="47.0" prefWidth="145.0" text="Вид боли:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="155.0" prefHeight="88.0" prefWidth="221.0" text="Название лекарства:" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <TextArea fx:id="name_field" layoutX="29.0" layoutY="243.0" prefHeight="41.0" prefWidth="221.0">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextArea>
+                  <Label layoutX="292.0" layoutY="196.0" prefHeight="47.0" prefWidth="201.0" text="Симптомы:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <TextArea fx:id="simp_field" layoutX="279.0" layoutY="243.0" prefHeight="37.0" prefWidth="221.0">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextArea>
+                  <Label layoutX="547.0" layoutY="196.0" prefHeight="47.0" prefWidth="193.0" text="Инструкция:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <TextArea fx:id="instr_field" layoutX="530.0" layoutY="243.0" prefHeight="37.0" prefWidth="228.0" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextArea>
+                  <Label layoutX="571.0" layoutY="63.0" prefHeight="47.0" prefWidth="145.0" text="Наличие:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="30.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Button fx:id="insert_btn" layoutX="310.0" layoutY="304.0" mnemonicParsing="false" onAction="#insertToDB" prefHeight="42.0" prefWidth="160.0" text="Добавить">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ComboBox fx:id="payne_box" layoutX="29.0" layoutY="107.0" prefHeight="38.0" prefWidth="221.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ComboBox>
+                  <ComboBox fx:id="nalich_box" layoutX="533.0" layoutY="108.0" prefHeight="37.0" prefWidth="221.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ComboBox>
+                  <Button fx:id="deleteBut" layoutX="499.0" layoutY="487.0" mnemonicParsing="false" onAction="#deleteDb" prefHeight="76.0" prefWidth="145.0" text="Удалить">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <TextArea fx:id="take_delete" layoutX="67.0" layoutY="487.0" prefHeight="64.0" prefWidth="395.0" promptText="Введите название для удаления">
+                     <font>
+                        <Font name="Times New Roman" size="26.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextArea>
+                  <Label layoutX="215.0" layoutY="410.0" prefHeight="47.0" prefWidth="364.0" text="Удаление лекарства" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="head_pane" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <Label fx:id="head_label" layoutX="251.0" layoutY="14.0" prefHeight="47.0" prefWidth="277.0" text="Головные боли" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Button fx:id="head_find" layoutX="14.0" layoutY="494.0" mnemonicParsing="false" onAction="#head_finding" prefHeight="25.0" prefWidth="325.0" text="Найти" />
+                  <TableView fx:id="head_table" layoutX="14.0" layoutY="76.0" prefHeight="405.0" prefWidth="748.0">
+                    <columns>
+                      <TableColumn fx:id="head_table_name" prefWidth="132.0" text="Название" />
+                      <TableColumn fx:id="head_table_vid" minWidth="5.0" prefWidth="107.0" text="Вид" />
+                        <TableColumn fx:id="head_table_simp" prefWidth="155.0" text="Симптоматика" />
+                        <TableColumn fx:id="head_table_instr" minWidth="0.0" prefWidth="235.0" text="Инструкция" />
+                        <TableColumn fx:id="head_table_nalich" prefWidth="118.0" text="Наличие" />
+                    </columns>
+                  </TableView>
+                  <ComboBox fx:id="head_combo_box" layoutX="359.0" layoutY="494.0" prefHeight="25.0" prefWidth="403.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="stomach_pane" layoutY="-2.0" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <Label fx:id="stomach_label" layoutX="243.0" layoutY="14.0" prefHeight="47.0" prefWidth="274.0" text="Боли в животе" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <TableView fx:id="stomach_table" layoutX="14.0" layoutY="80.0" prefHeight="405.0" prefWidth="748.0">
+                     <columns>
+                        <TableColumn fx:id="stomach_table_name" prefWidth="132.0" text="Название" />
+                        <TableColumn fx:id="stomach_table_vid" minWidth="5.0" prefWidth="107.0" text="Вид" />
+                        <TableColumn fx:id="stomach_table_simp" prefWidth="155.0" text="Симптоматика" />
+                        <TableColumn fx:id="stomach_table_instr" prefWidth="255.0" text="Инструкция" />
+                        <TableColumn fx:id="stomach_table_nalich" prefWidth="105.0" text="Наличие" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="stomach_find" layoutX="14.0" layoutY="496.0" mnemonicParsing="false" onAction="#stomach_finding" prefHeight="25.0" prefWidth="325.0" text="Найти" />
+                  <ComboBox fx:id="stomach_combo_box" layoutX="353.0" layoutY="496.0" prefHeight="25.0" prefWidth="409.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="teeth_pane" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <TableView fx:id="teeth_table" layoutX="14.0" layoutY="74.0" prefHeight="405.0" prefWidth="748.0">
+                     <columns>
+                        <TableColumn fx:id="teeth_table_name" prefWidth="132.0" text="Название" />
+                        <TableColumn fx:id="teeth_table_vid" minWidth="5.0" prefWidth="107.0" text="Вид" />
+                        <TableColumn fx:id="teeth_table_simp" prefWidth="155.0" text="Симптоматика" />
+                        <TableColumn fx:id="teeth_table_instr" prefWidth="255.0" text="Инструкция" />
+                        <TableColumn fx:id="teeth_table_nalich" prefWidth="105.0" text="Наличие" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="276.0" layoutY="13.0" prefHeight="47.0" prefWidth="221.0" text="Зубные боли" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Button fx:id="teeth_find" layoutX="15.0" layoutY="488.0" mnemonicParsing="false" onAction="#teeth_finding" prefHeight="25.0" prefWidth="325.0" text="Найти" />
+                  <ComboBox fx:id="teeth_combo_box" layoutX="376.0" layoutY="488.0" prefHeight="25.0" prefWidth="383.0" />
+               </children></Pane>
+            <Pane fx:id="body_pane" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <ComboBox fx:id="body_combo_box" layoutX="361.0" layoutY="493.0" prefHeight="25.0" prefWidth="403.0" />
+                  <TableView fx:id="body_table" layoutX="14.0" layoutY="76.0" prefHeight="405.0" prefWidth="748.0">
+                     <columns>
+                        <TableColumn fx:id="body_table_name" prefWidth="132.0" text="Название" />
+                        <TableColumn fx:id="body_table_vid" minWidth="5.0" prefWidth="107.0" text="Вид" />
+                        <TableColumn fx:id="body_table_simp" prefWidth="155.0" text="Симптоматика" />
+                        <TableColumn fx:id="body_table_instr" prefWidth="255.0" text="Инструкция" />
+                        <TableColumn fx:id="body_table_nalich" prefWidth="105.0" text="Наличие" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="body_find" layoutX="14.0" layoutY="493.0" mnemonicParsing="false" onAction="#body_finding" prefHeight="25.0" prefWidth="325.0" text="Найти" />
+                  <Label fx:id="body_label" layoutX="253.0" layoutY="12.0" prefHeight="47.0" prefWidth="258.0" text="Телесные боли" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="virus_pane" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <Label layoutX="291.0" layoutY="12.0" prefHeight="47.0" prefWidth="178.0" text="Простуда" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Button fx:id="virus_find" layoutX="14.0" layoutY="489.0" mnemonicParsing="false" onAction="#virus_finding" prefHeight="25.0" prefWidth="325.0" text="Найти" />
+                  <ComboBox fx:id="virus_combo_box" layoutX="374.0" layoutY="489.0" prefHeight="25.0" prefWidth="389.0" />
+                  <TableView fx:id="virus_table" layoutX="14.0" layoutY="76.0" prefHeight="405.0" prefWidth="748.0">
+                     <columns>
+                        <TableColumn fx:id="virus_table_name" prefWidth="132.0" text="Название" />
+                        <TableColumn fx:id="virus_table_vid" minWidth="5.0" prefWidth="107.0" text="Вид" />
+                        <TableColumn fx:id="virus_table_simp" prefWidth="155.0" text="Симптоматика" />
+                        <TableColumn fx:id="virus_table_instr" prefWidth="255.0" text="Инструкция" />
+                        <TableColumn fx:id="virus_table_nalich" prefWidth="105.0" text="Наличие" />
+                     </columns>
+                  </TableView>
+               </children></Pane>
+            <Pane fx:id="all_heal_pane" onContextMenuRequested="#mycont" prefHeight="607.0" prefWidth="778.0" style="-fx-background-color: rgb(80, 80, 80);">
+               <children>
+                  <Label layoutX="81.0" layoutY="25.0" prefHeight="47.0" prefWidth="611.0" text="Список всех лекарств от болезней" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="36.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <TableView fx:id="all_table" layoutX="15.0" layoutY="96.0" prefHeight="446.0" prefWidth="748.0">
+                     <columns>
+                        <TableColumn fx:id="stomach_table_name1" prefWidth="132.0" text="Название" />
+                        <TableColumn fx:id="stomach_table_vid1" minWidth="5.0" prefWidth="107.0" text="Вид" />
+                        <TableColumn fx:id="stomach_table_simp1" prefWidth="155.0" text="Симптоматика" />
+                        <TableColumn fx:id="stomach_table_instr1" prefWidth="255.0" text="Инструкция" />
+                        <TableColumn fx:id="stomach_table_nalich1" prefWidth="105.0" text="Наличие" />
+                     </columns>
+                     <contextMenu>
+                        <ContextMenu fx:id="menu_ite">
+                          <items>
+                            <MenuItem fx:id="Item1" mnemonicParsing="false" onAction="#Press_yes" text="Есть" />
+                              <MenuItem fx:id="Item2" mnemonicParsing="false" onAction="#Press_no" text="Нет" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
